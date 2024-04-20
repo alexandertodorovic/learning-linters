@@ -11,7 +11,7 @@ Afterwards, compare the linted copy to this original file to understand the chan
 Functions:
     get_current_time_in_japan: Returns the current time in Japan.
     get_current_time_in_country: Returns the current time in a specified timezone.
-    calculate_time_difference: Returns the time difference between Japan and Germany in hours.
+    calculate_time_difference: Returns the time difference between Japan and a Country in hours.
 """
 
 from datetime import datetime
@@ -47,10 +47,10 @@ def get_current_time_in_country(timezone):
 
 def calculate_time_difference():
     """
-    Calculate the time difference between Japan and Germany.
+    Calculate the time difference between Japan and the specified Country.
 
     Returns:
-        int: The time difference between Japan and Germany.
+        int: The time difference between Japan and the specified Country.
     """
     japan_time = get_current_time_in_japan()
     country_time = get_current_time_in_country('Europe/Berlin')
