@@ -1,5 +1,22 @@
+"""
+times.py
+
+This module provides functions to get the current time in Japan and in a specified timezone.
+It also provides a function to calculate the time difference between Japan and a Country.
+
+This module is intended to be used as a template for applying a linter. 
+Create a copy of this module and apply the linter to the copy. 
+Afterwards, compare the linted copy to this original file to understand the changes made by the linter.
+
+Functions:
+    get_current_time_in_japan: Returns the current time in Japan.
+    get_current_time_in_country: Returns the current time in a specified timezone.
+    calculate_time_difference: Returns the time difference between Japan and Germany in hours.
+"""
+
 from datetime import datetime
 import pytz
+
 
 def get_current_time_in_japan():
     """
@@ -12,16 +29,21 @@ def get_current_time_in_japan():
     japan_time = datetime.now(japan_tz)
     return japan_time
 
-def get_current_time_in_germany():
+
+def get_current_time_in_country(timezone):
     """
-    Get the current time in Germany.
+    Get the current time in a specified timezone.
+
+    Args:
+        timezone (str): The timezone to get the current time for.
 
     Returns:
-        datetime: The current time in Germany.
+        datetime: The current time in the specified timezone.
     """
-    germany_tz = pytz.timezone('Europe/Berlin')
-    germany_time = datetime.now(germany_tz)
-    return germany_time
+    specified_tz = pytz.timezone(timezone)
+    specified_time = datetime.now(specified_tz)
+    return specified_time
+
 
 def calculate_time_difference():
     """
@@ -31,10 +53,10 @@ def calculate_time_difference():
         int: The time difference between Japan and Germany.
     """
     japan_time = get_current_time_in_japan()
-    germany_time = get_current_time_in_germany()
+    country_time = get_current_time_in_country('Europe/Berlin')
 
     # Only consider the hour part of the time
-    time_difference_in_hours = japan_time.hour - germany_time.hour
+    time_difference_in_hours = japan_time.hour - country_time.hour
 
     # If the result is negative, add 24 to get the correct time difference
     if time_difference_in_hours < 0:
@@ -42,7 +64,8 @@ def calculate_time_difference():
 
     return time_difference_in_hours
 
+
 if __name__ == '__main__':
     print(get_current_time_in_japan())
-    print(get_current_time_in_germany())
-    print(calculate_time_difference())
+    print(get_current_time_in_country('Europe/Berlin'))
+    print(f"Time difference in hours: {calculate_time_difference()}")
