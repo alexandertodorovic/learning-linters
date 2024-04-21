@@ -17,6 +17,7 @@ Functions:
 from datetime import datetime
 import pytz
 
+import pandas as pd
 
 def get_current_time_in_japan():
     """
@@ -43,7 +44,6 @@ def get_current_time_in_country(timezone):
     specified_tz = pytz.timezone(timezone)
     specified_time = datetime.now(specified_tz)
     return specified_time
-
 
 def calculate_time_difference():
     """
