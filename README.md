@@ -7,6 +7,6 @@ On learning ruff and pre-commit.
 4. Run in the terminal 
 
 Run a linter on a template
-1. Copy a template e.g. [times_nolinter.py](templates/times_nolinter.py) and renamte it to e.g. [times.py](main/times.py)
+1. Copy a template e.g. [times_nolinter.py](templates/times_nolinter.py) and renamte it to e.g. [times.py](times.py)
 2. Run ruff check times.py. To see all parameters run ruff check -h.
 
