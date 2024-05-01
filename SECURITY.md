@@ -9,6 +9,6 @@ Any version supported.
 
 ## Reporting a Vulnerability
 
-If you find security related issues in this project I would be happy if you report them via [Reporting Security Issues](https://github.com/alexandertodorovic/learning-linters/blob/main/.github/ISSUE_TEMPLATE/reporting-security-issues-template.md).
+If you have discovered a potential security vulnerability in this project, I'd be happy if you'd report it by using our [security issue template](https://github.com/yourusername/yourrepository/issues/new?assignees=&labels=security&template=security_issue_template.md&title=%5BSECURITY%5D).
 
 I will do my best to correct the error within a month.
