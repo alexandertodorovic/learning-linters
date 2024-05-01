@@ -9,6 +9,6 @@ Any version supported.
 
 ## Reporting a Vulnerability
 
-If you have discovered a potential security vulnerability in this project, I'd be happy if you'd report it by using our [security issue template](https://github.com/yourusername/yourrepository/issues/new?assignees=&labels=security&template=security_issue_template.md&title=%5BSECURITY%5D).
+If you have discovered a potential security vulnerability in this project, I'd be happy if you'd report it by using our [security issue template](https://github.com/alexandertodorovic/learning-linters/issues/new?assignees=&labels=security&projects=&template=reporting-security-issues-template.md&title=%5BSECURITY%5D+-+Short+description+of+the+issue).
 
 I will do my best to correct the error within a month.
