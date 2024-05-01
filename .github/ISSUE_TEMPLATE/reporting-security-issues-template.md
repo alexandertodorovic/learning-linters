@@ -1,13 +1,4 @@
 ---
-name: Reporting Security Issues Template
-about: Reporting Security Issues
-title: "[SECURITYISSUE]"
-labels: ''
-assignees: alexandertodorovic
-
----
-
----
 name: Security Issue Report
 about: Use this template to report security vulnerabilities
 title: "[SECURITY] - Short description of the issue"
