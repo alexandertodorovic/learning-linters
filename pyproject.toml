@@ -12,7 +12,9 @@ python = "^3.10"
 ruff = "^0.4.1"
 pre-commit = "^3.7.0"
 
-
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "B021", "D209"] # https://docs.astral.sh/ruff/rules/#flake8-copyright-cpy
