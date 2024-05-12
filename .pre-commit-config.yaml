@@ -5,3 +5,6 @@ repos:
   hooks:
     # Run the linter.
     - id: ruff
+    - exclude: ^templates/  # This excludes any files inside the 'templates' directory at the root of the repository
+    - id: ruff-format
+    - exclude: ^templates/  # This excludes any files inside the 'templates' directory at the root of the repository
