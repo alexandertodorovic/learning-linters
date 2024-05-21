@@ -24,5 +24,6 @@ def print_similarity_percentage(similarity):
 sentence1 = "I love programming in Python."
 sentence2 = "I enjoy coding in Python."
 
+print(f"Start similarity calcuation ...")
 similarity_score = calculate_similarity(sentence1, sentence2)
 print_similarity_percentage(similarity_score)
